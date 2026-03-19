@@ -15,7 +15,8 @@ public class AplicaoTesteApplication {
         SpringApplication.run(AplicaoTesteApplication.class, args);
 	}
 
-    @GetMapping("/hello")
+    //Rota de teste para imprimir uma mensagem na tela
+    @GetMapping("/hello") //Indica que o metodo abaixo será executado quando o usuário acessar o caminho (domínio)/hello
     public static String hello(@RequestParam(value = "name", defaultValue = "Mundo") String name) {
         return String.format("Olá %s!", name);
     }
