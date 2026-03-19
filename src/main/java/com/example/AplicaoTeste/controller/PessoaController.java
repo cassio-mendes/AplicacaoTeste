@@ -1,6 +1,6 @@
 package com.example.AplicaoTeste.controller;
 
-import com.example.AplicaoTeste.services.PessoaService;
+import com.example.AplicaoTeste.service.PessoaService;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -15,4 +15,11 @@ public class PessoaController {
     public PessoaController(PessoaService pessoaService) {
         this.pessoaService = pessoaService;
     }
+
+    //TIPOS DE REQUISIÇÕES WEB:
+    //GET: Buscar/ler -> @GetMapping
+    //POST: Criar/enviar -> @PostMapping
+    //PUT: Atualizar tudo -> @PutMapping
+    //DELETE: Remover -> @DeleteMapping
+
 }
